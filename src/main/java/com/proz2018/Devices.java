@@ -2,19 +2,19 @@ package com.proz2018;
 
 import java.util.Date;
 
-public class Devices {
+public class Devices { 
     /** Mandatory */
-    String deviceLabel;
+    String deviceLabel; // why all class fields are not private?
 
     /** Default */
     String deviceName;
     Boolean enabled;
     String description;
 
-    Date createdAtDate;
+    Date createdAtDate; // please use java8 date objects (Instant or LocalDate or etc)
     Date lastActivity;
 
-    com.proz2018.model.Context context;
+    com.proz2018.model.Context context; // why full package name? it can be imported
 
     public Devices(String deviceLabel, String deviceName, Boolean enabled, String description, Date createdAtDate) {
         this.deviceLabel = deviceLabel;
